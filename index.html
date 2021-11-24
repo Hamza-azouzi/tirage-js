@@ -11,11 +11,12 @@
     <style>
 
     </style>
+    
 </head>
 
 <body>
     <div class="container">
-        <div class="form">
+        <div id="form">
             <input id="name" type=" text " placeholder="Full name ">
             <input id="subject" type="text " placeholder="Subject ">
             <input type="date" id="Date" name="birthday">
@@ -25,6 +26,7 @@
                 <button onclick="save()" class="icon1 "></button>
                 <button id="list" class="icon2 "></button>
                 <button id="Tourage" class="icon3 "></button>
+                <button id="download"  onclick="downloadCSV()" class="icon4 "></button>
 
                 <div id="DisplayList"">
                     <div id="FullName">
@@ -36,6 +38,8 @@
                     <div id="Time">
 
                     </div>
+
+                    
                 </div>
 
             </div>
@@ -48,7 +52,7 @@
     </div>
         <script src="https://unpkg.com/axios/dist/axios.min.js "></script>-->
         <script src="app.js "></script>
-
+    
 
 </body>
 
